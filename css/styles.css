@@ -1,0 +1,172 @@
+h1 {
+    margin: 0px;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.5rem; /* 100% = 16px = 1 em. If u set the body to a certain size, then u set h1 to a size, itll add them up. only for % and em, but for pixels it wont add up. 
+                         to fix ading up prob, use the rem value, whicg means root em,and this will ignore all other values */
+
+    color: #66BFBF;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    color: #66BFBF;    
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: #40514E;
+}
+
+hr {
+    background-color: none;
+    border-style: dotted none none;
+    border-color: grey;
+    border-width: 5px;
+    width: 3%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+a {
+    color: #11999E;
+}
+
+a:hover {
+    color: #EAF6F6;
+}
+/* IDs can only be used once,and can only have one id per element. Refrain from using ids when possible */
+
+/* Classes can be used multiple times, and can have many classes per element*/
+.header{
+    background-color: #cafcff;
+    text-align: center;
+    position: relative;
+    padding-top: 150px;
+}
+
+.profile {
+    width: 30%;
+    margin: 0 auto 0;
+    line-height: 2;
+    
+}
+
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 20px;
+    width: 150px;
+
+}
+
+.bottom-cloud {
+    position: absolute;
+    width: 150px;
+    bottom: 40%;
+    left: 20%;
+}
+
+.mountain {
+    width: 700px;
+    padding-top: 50px;
+}
+
+.pfp {
+    border-radius: 100%;
+    width: 40%;
+    margin-top: 50px;
+}
+
+.computer-pic {
+    border-radius: 100%;
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.chillie-img {
+    width: 25%;
+    float: right; /*float makes img go left and lets text wrap around it. if u want some of text not to float left, u can target it and use the clear property. */
+    margin-left: 30px;
+}
+
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 0 auto;
+    line-height: 2;
+    text-align: left;
+}
+
+.contact-me {
+    line-height: 2;
+    width: 40%;
+    margin: 0 auto 50px;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    margin-bottom: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.btn {
+    -webkit-border-radius: 7;
+    -moz-border-radius: 7;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #11999e;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #66BFBF;
+    text-decoration: none;
+  }
+
+.copyright {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    color: #EAF6F6;
+    font-size: 0.75rem;
+
+}
+/* psudeo-classes activate when elements state changes. have 2 dots, like :hover */
+
+/*DISPLAY PROPERTY:*/
+/*block element takes up whole width of page, inline elements only take up as much space as needed but cant change their width and height,
+  inline-block elements act as inline but can change their width and height, none element gets rid of element from screen as if it doesnt exist, diff then visibility none, which hides it but keeps dimensions.
+  */
+
+/*POSITION PROPERTY*/
+/* Static is the default. Relative is going to be changed to what u set top bottom left right positions, relative to its original static position. Note: when changing, 
+   it will still keep the original dimensions and not push anything away, and will still affect all around it as before, just will position the actual element where specified. Also, when u say for example, top: 50px, its like its giving
+   it a margin of 50px from the top of its original position, so itll move down, same for all other directions.
+    Absolute works like relative, but instead of the positions going based on its static position, the positions are based on its parent element. so if 30 px right, itll be 30px away from the right of the parent element's right margin. Also,
+    absolute DOES affect the flow of the rest of the html elements.
+    Fixed stays in that spot , even when user scrolls , good for navbar.
+
+    The way to center elements is to call the text-align: center; in the parent element. In cases where that doesnt work (like where it has a width value), use the margin: auto; property.
+
+   */
